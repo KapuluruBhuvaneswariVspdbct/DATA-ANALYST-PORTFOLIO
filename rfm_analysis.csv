@@ -1,0 +1,11 @@
+"Customer Name",Recency,Frequency,Monetary,F_score,M_score,R_score,RFM_Score,Churn,Risk
+"Chris White",62,22,18885,1,1,1,111,1,"High Risk"
+"Daniel Harris",31,23,18945,2,1,2,221,0,"Low Risk"
+"David Lee",0,26,22665,3,2,3,332,1,"High Risk"
+"Emily Johnson",0,22,23475,1,3,3,313,0,"Low Risk"
+"Emma Clark",1,32,29700,4,4,3,344,0,"Low Risk"
+"Jane Smith",0,30,31185,4,4,3,344,0,"Low Risk"
+"John Doe",31,26,26870,3,3,2,233,0,"Low Risk"
+"Michael Brown",0,24,22655,2,2,3,322,0,"Low Risk"
+"Olivia Wilson",61,29,36170,4,4,1,144,0,"Low Risk"
+"Sophia Miller",1,16,13295,1,1,3,311,1,"High Risk"
