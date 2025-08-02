@@ -17,7 +17,7 @@
   <!-- Navbar -->
 <header>
   <nav class="navbar">
-    <h1 class="logo">BHUVANESWARI KAPULURU</h1>
+    <h1 class="logo" style="font-size: 40px;">BHUVANESWARI   KAPULURU</h1>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#samples">Work Samples</a></li>
@@ -815,6 +815,22 @@ initCarousel('retailCarouselSlide', 'retailDots', 'retailPrev', 'retailNext');
   });
 </script>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Remove if you want it to trigger only once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>
