@@ -1176,3 +1176,101 @@ body {
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
   border: 1px solid rgba(0, 255, 255, 0.6);
 }
+
+section {
+  padding: 40px 20px; /* Reduce vertical spacing */
+  max-width: 1100px;  /* Restrict max width */
+  margin: 0 auto;     /* Center align */
+  box-sizing: border-box;
+}
+
+/* Hero section adjustments */
+.hero {
+  padding: 40px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.hero-image img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Reduce heading sizes globally */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Sample section tweaks */
+.samples-section {
+  padding: 40px 10px;
+}
+
+.samples-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Skills, About, Services, Projects, etc. */
+#skills,
+#about,
+#services,
+#industries,
+#projects,
+#contact {
+  padding: 40px 20px;
+}
+
+/* Reduce card height if needed */
+.card {
+  height: 180px !important; /* From 220px */
+  padding: 16px;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 30px 16px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .card {
+    height: 160px;
+  }
+}
