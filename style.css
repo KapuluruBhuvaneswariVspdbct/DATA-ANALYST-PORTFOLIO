@@ -1274,3 +1274,42 @@ h3 {
     height: 160px;
   }
 }
+
+section {
+  max-width: 1000px;       /* Reduces horizontal stretch */
+  padding: 40px 20px;      /* Shrinks vertical and horizontal padding */
+  margin: 40px auto;       /* Adds space between sections and centers them */
+  box-sizing: border-box;
+  border-radius: 12px;     /* Optional: soft corners for elegance */
+  background: rgba(255, 255, 255, 0.03); /* Optional: subtle background */
+}
+
+/* Optional: Add subtle shadow */
+section:not(.hero) {
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+@media (max-width: 768px) {
+  section {
+    max-width: 90%;
+    padding: 24px 12px;
+    margin: 24px auto;
+  }
+}
+section {
+  max-width: 900px;
+  padding: 30px 16px;
+  margin: 30px auto;
+}
+section {
+  max-width: 1000px;       /* Reduces horizontal stretch */
+  padding: 40px 20px;      /* Shrinks vertical and horizontal padding */
+  margin: 40px auto;       /* Adds space between sections and centers them */
+  box-sizing: border-box;
+  border-radius: 12px;     /* Optional: soft corners for elegance */
+  background: rgba(255, 255, 255, 0.03); /* Optional: subtle background */
+}
+
+/* Optional: Add subtle shadow */
+section:not(.hero) {
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
