@@ -917,3 +917,92 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
+
+
+
+/* Base styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  height: 70px; /* Reduced height */
+}
+
+.logo {
+  font-size: 22px; /* Reduced font size */
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Desktop nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px 8px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #1abc9c;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .logo {
+    font-size: 18px; /* Even smaller on mobile */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 16px;
+    background: #333;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 1000;
+    width: 160px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}
