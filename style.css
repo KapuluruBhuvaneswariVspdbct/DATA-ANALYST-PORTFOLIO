@@ -929,11 +929,9 @@ body {
 
 .card-container {
   max-height: 460px;  /* or whatever fits your cards */
-  display: flex;      /* so cards sit side-by-side */
-  gap: 1rem;          /* space between cards */
-  align-items: center; /* vertically center content */
-  padding: 0.5rem;    /* reduce extra space */
+
 }
+
 
 
 
