@@ -808,7 +808,7 @@ body {
   background: #222;
   color: #fff;
   padding: 10px 20px;
-  height: 45px;
+  height: 65px;
 }
 
 .logo {
@@ -865,6 +865,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
+  height:500px;
 }
 
 .sample-card {
@@ -917,6 +918,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
