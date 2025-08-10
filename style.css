@@ -291,7 +291,7 @@ body {
 }
 
 .service-card img {
-  height:300PX;
+  height:300px;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -855,7 +855,9 @@ body {
   .nav-links li {
     margin: 10px 0;
   }
-
+ .samples-gallery {
+   margin-top:10%;
+ }
   .nav-links.show {
     display: flex;
   }
@@ -875,6 +877,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
   transition: transform 0.3s ease;
   text-align: center;
+  height:500px;
 }
 
 .sample-card:hover {
@@ -918,6 +921,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
