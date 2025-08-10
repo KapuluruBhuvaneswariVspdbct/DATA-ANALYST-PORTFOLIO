@@ -734,6 +734,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 20px;
+  height:500px;
 }
 
 #projects .card {
@@ -921,6 +922,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
