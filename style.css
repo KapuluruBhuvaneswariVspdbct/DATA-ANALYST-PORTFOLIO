@@ -912,12 +912,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 300px;
   }
 
   .swiper-slide img {
     width: 90%;
-    height: auto;
+    height: 300px;
     border-radius: 10px;
   }
 
@@ -926,6 +926,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
