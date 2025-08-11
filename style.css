@@ -284,7 +284,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #fff;
   max-width: 300px;
-
+  max-height:400px;
 }
 
 .service-card:hover {
@@ -926,6 +926,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
