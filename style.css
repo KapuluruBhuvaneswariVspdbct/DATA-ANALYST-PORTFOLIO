@@ -770,6 +770,7 @@ body {
 #projects .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  height:350px;
 }
 .card img {
   width: 100%;
@@ -923,6 +924,7 @@ body {
     font-weight: 500;
     color: #00f0ff;
   }
+
 
 
 
