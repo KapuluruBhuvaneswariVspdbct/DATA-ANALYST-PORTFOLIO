@@ -5,30 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Data Analyst Portfolio | BHUVANESWARI KAPULURU</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    @media (max-width: 768px) {
+<style>
 
-  .hero {
-    padding-bottom: 20px !important;
-    margin-bottom: 0 !important;
+/* ============ GLOBAL FIX ============ */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============ HERO SECTION ============ */
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column !important;
+    text-align: center;
   }
 
-  #samples {
-    margin-top: 0 !important;
-    padding-top: 20px !important;
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+/* ============ CARD LAYOUT FIX ============ */
+.card-container,
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Remove fixed width behavior */
+.card,
+.service-card {
+  flex: 1 1 280px;
+  max-width: 350px;
+}
+
+/* ============ MOBILE FIX ============ */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    display: none;
+    padding: 20px 0;
+    z-index: 999;
   }
 
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Sections spacing */
   .section {
     padding: 40px 15px !important;
   }
 
-  .hero-image img {
-    max-height: 350px;
-    object-fit: cover;
+  /* Hero */
+  .hero {
+    padding: 40px 20px !important;
+  }
+
+  /* Cards stack vertically */
+  .card-container,
+  .services-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .card,
+  .service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Fix skills overlapping */
+  #skills .card {
+    max-height: none !important;
+  }
+
+  /* Industries fixed width override */
+  #industries .card {
+    width: 100% !important;
+  }
+
+  /* Modal responsive */
+  .modal-content {
+    width: 95% !important;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .project-body {
+    flex-direction: column !important;
+  }
+
+  /* YouTube */
+  .youtube-video iframe {
+    height: 220px !important;
   }
 
 }
-  </style>  <!-- Swiper CSS -->
+
+/* ============ SMALL DEVICES ============ */
+@media (max-width: 480px) {
+
+  h1, h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+}
+
+</style>
+ <!-- Swiper CSS -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -844,5 +951,6 @@ initCarousel('retailCarouselSlide', 'retailDots', 'retailPrev', 'retailNext');
 
 </body>
 </html>
+
 
 
