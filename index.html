@@ -10,6 +10,32 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+/* =========================
+   FIX MOBILE GAP
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-bottom: 20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #samples {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+  }
+
+  .section {
+    padding: 40px 15px !important;
+  }
+
+  .hero-image img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+}
 
 </head>
 <body>
@@ -818,3 +844,4 @@ initCarousel('retailCarouselSlide', 'retailDots', 'retailPrev', 'retailNext');
 
 </body>
 </html>
+
