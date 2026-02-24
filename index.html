@@ -67,6 +67,50 @@
     flex-direction: column;
     gap: 25px;
   }
+#projects {
+    padding: 60px 10px;
+  }
+
+  /* Stack cards */
+  #projects .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Increase card width */
+  #projects .card {
+    width: 98%;
+    max-width: 600px;
+    padding: 20px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+  }
+
+  /* Bigger project images */
+  #projects .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  /* Make button full width */
+  .see-project-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  /* YouTube iframe full responsive */
+  .youtube-video iframe {
+    width: 100%;
+    height: 220px;
+  }
 
   #projects .card {
     width: 100%;
@@ -945,6 +989,7 @@ initCarousel('retailCarouselSlide', 'retailDots', 'retailPrev', 'retailNext');
 
 </body>
 </html>
+
 
 
 
