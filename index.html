@@ -10,7 +10,84 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<style>/* ===========================
+   MOBILE RESPONSIVE FIXES
+   =========================== */
 
+@media (max-width: 768px) {
+
+  /* -------- HERO SECTION -------- */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+
+  /* -------- ABOUT SECTION -------- */
+  .about-section {
+    padding: 70px 20px;
+  }
+
+  .about-card {
+    padding: 30px;
+    min-height: 350px;
+  }
+
+
+  /* -------- SKILLS SECTION -------- */
+  #skills .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills .card {
+    width: 90%;
+    height: auto;
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  #skills .card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+
+  /* -------- PROJECTS SECTION -------- */
+  #projects .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #projects .card {
+    width: 100%;
+    min-height: 480px;
+    padding: 20px;
+  }
+
+  #projects .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+  /* -------- GENERAL FIX -------- */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+</style>
 </head>
 <body>
 
@@ -116,37 +193,37 @@
   <h2>My Skills</h2>
   <div class="card-container">
   
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card" >
       <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Logo" class="skill-logo" style="width: 50px;height:50px" />
       <h3>Excel</h3>
       <p>Advanced formulas, pivot tables, VLOOKUP/XLOOKUP, charts.</p>
     </div>
 
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL Logo" class="skill-logo" style="width: 50px;height:50px"  />
       <h3>SQL</h3>
       <p>Joins, subqueries, window functions, performance tuning.</p>
     </div>
 
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card" >
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" class="skill-logo" style="width: 50px;height:50px" />
       <h3>Power BI</h3>
       <p>Interactive dashboards, DAX, Power Query, slicers.</p>
     </div>
 
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card" >
       <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Logo" class="skill-logo" style="width: 50px;height:50px"  />
       <h3>Python</h3>
       <p>Data analysis, automation, scripting for cleaning & modeling.</p>
     </div>
 
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card" >
       <img src="https://tse1.mm.bing.net/th/id/OIP.rwENeVMYui56SVSyIw6RgQHaCc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pandas Logo" class="skill-logo" style="width: 50px;height:50px" " />
       <h3>Pandas</h3>
       <p>DataFrames, groupby, merge, time-series analysis.</p>
     </div>
 
-    <div class="card" style="padding: 10px; max-height: 140px;">
+    <div class="card" >
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy Logo" class="skill-logo" style="width: 50px;height:50px"  />
       <h3>NumPy</h3>
       <p>Efficient numerical computation, arrays, broadcasting.</p>
@@ -818,3 +895,4 @@ initCarousel('retailCarouselSlide', 'retailDots', 'retailPrev', 'retailNext');
 
 </body>
 </html>
+
