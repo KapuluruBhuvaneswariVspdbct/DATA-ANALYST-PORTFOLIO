@@ -926,59 +926,59 @@
 </div>
 <script>
 function initCarousel(slideId, dotsId, prevId, nextId) {
-  let index = 0;
-  const slide = document.getElementById(slideId);
-  const images = slide.querySelectorAll('img');
-  const total = images.length;
-  const dotsContainer = document.getElementById(dotsId);
-const atliqSlide = document.getElementById('atliqCarouselSlide');
-const retailSlide = document.getElementById('retailCarouselSlide');
-for (let i = 0; i <= 26; i++) {
-  const img = document.createElement('img');
-  img.src = `2b8638a0-2125-42d2-ac02-8f95b4ac4f6c-${i}.jpg`;
-  img.alt = `Online Retail Screenshot ${i}`;
-  retailSlide.appendChild(img);
-}
-for (let i = 0; i <= 21; i++) {
-  const img = document.createElement('img');
-  img.src = `e6b30287-99c6-4842-889b-d615372ef1e4-${i}.jpg`;
-  img.alt = `AtliQ Screenshot ${i}`;
-  atliqSlide.appendChild(img);
-}
-  // Create dots
-  for (let i = 0; i < total; i++) {
-    const dot = document.createElement('button');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goTo(i));
-    dotsContainer.appendChild(dot);
-  }
+    let index = 0;
 
-  function show() {
-    slide.style.transform = `translateX(${-index * 100}%)`;
-    dotsContainer.querySelectorAll('button').forEach((d, i) => {
-      d.classList.toggle('active', i === index);
+    const slide = document.getElementById(slideId);
+    const dotsContainer = document.getElementById(dotsId);
+    const prevButton = document.getElementById(prevId);
+    const nextButton = document.getElementById(nextId);
+
+    if (!slide || !dotsContainer) return;
+
+    const images = slide.querySelectorAll('img');
+    const total = images.length;
+
+    if (total === 0) return;
+
+    // Create dots
+    for (let i = 0; i < total; i++) {
+        const dot = document.createElement('button');
+
+        if (i === 0) {
+            dot.classList.add('active');
+        }
+
+        dot.addEventListener('click', () => {
+            index = i;
+            show();
+        });
+
+        dotsContainer.appendChild(dot);
+    }
+
+    function show() {
+        slide.style.transform = `translateX(${-index * 100}%)`;
+
+        dotsContainer.querySelectorAll('button').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    nextButton.addEventListener('click', () => {
+        index = (index + 1) % total;
+        show();
     });
-  }
 
-  function goTo(i) {
-    index = i;
-    show();
-  }
+    prevButton.addEventListener('click', () => {
+        index = (index - 1 + total) % total;
+        show();
+    });
 
-  document.getElementById(nextId).addEventListener('click', () => {
-    index = (index + 1) % total;
-    show();
-  });
-
-  document.getElementById(prevId).addEventListener('click', () => {
-    index = (index - 1 + total) % total;
-    show();
-  });
-
-  setInterval(() => {
-    index = (index + 1) % total;
-    show();
-  }, 4000);
+    // Auto slide
+    setInterval(() => {
+        index = (index + 1) % total;
+        show();
+    }, 4000);
 }
 
 // Initialize both carousels
